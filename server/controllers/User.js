@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { createError } from "../error.js";
 import admin from "firebase-admin";
 dotenv.config()
-import secret from '../fitnesstracked-firebase-adminsdk-nyoqr-c48e936f14.json ' assert { type: "json" } ;
+import secret from '../fitnesstracked-firebase-adminsdk-nyoqr-5506f20d9f.json' assert { type: "json" } ;
 
 admin.initializeApp({
   credential: admin.credential.cert(secret)
