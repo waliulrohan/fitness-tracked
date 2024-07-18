@@ -4,10 +4,10 @@ import dotenv from "dotenv";
 import { createError } from "../error.js";
 import admin from "firebase-admin";
 dotenv.config()
-import secret from '../fitnesstracked-firebase-adminsdk-nyoqr-5506f20d9f.json' assert { type: "json" } ;
+import secretFirestore from '../fitnesstracked-firebase-adminsdk-nyoqr-20cc8f868a.json' assert { type: "json" } ;
 
 admin.initializeApp({
-  credential: admin.credential.cert(secret)
+  credential: admin.credential.cert(secretFirestore)
 });
 
 const db = admin.firestore();
