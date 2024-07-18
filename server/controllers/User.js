@@ -3,7 +3,8 @@ import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import { createError } from "../error.js";
 import admin from "firebase-admin";
-console.log(process.env.JWT)
+dotenv.config()
+
 admin.initializeApp({
   credential: admin.credential.cert({
     type: process.env.FIREBASE_TYPE,
